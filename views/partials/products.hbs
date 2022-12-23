@@ -1,0 +1,24 @@
+<h1>Productos</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Imagen</th>
+        </tr>
+      </thead>
+      <tbody id="productos">
+        {{#each productos}}
+          <tr>
+            <td scope="row">{{name}}</td>
+            <td scope="row">{{price}}</td>
+            <td scope="row"><img
+                src="{{image}}"
+                alt="{{name}}"
+                height="30px"
+              />
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>

@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Información</h1>
+    <h2>Argumentos de entrada</h2>
+    {{#each info.entrada}}
+        <p>{{this}}</p>
+    {{/each}}
+    <h2>Nombre de la plataforma</h2>
+    <p>{{info.plataforma}}</p>
+    <h2>Version de node</h2>
+    <p>{{info.version}}</p>
+    <h2>Memoria total reservada(rss)</h2>
+    <p>{{info.memoria}}</p>
+    <h2>Path de ejecución</h2>
+    <p>{{info.path}}</p>
+    <h2>Id del proceso</h2>
+    <p>{{info.pid}}</p>
+</div>
